@@ -28,7 +28,6 @@ order by 1,2
 
 select location,date,population,total_cases,(total_deaths/population)*100 as PercentPopulationdeath 
 from PortfolioProject..covidDeaths 
---where location like '%india%'
 order by 1,2
 
 -- looking at Countries with highest infection Rate compared to population
