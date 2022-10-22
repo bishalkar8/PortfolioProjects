@@ -23,7 +23,7 @@ from PortfolioProject..covidDeaths
 where location like '%india%'
 order by 1,2
 
---looking at total cases vs population
+--looking at total deaths vs population
 -- shows  what percentage of population got covid
 
 select location,date,population,total_cases,(total_deaths/population)*100 as PercentPopulationdeath 
