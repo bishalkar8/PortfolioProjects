@@ -75,7 +75,6 @@ order by totaldeathcount desc
 select sum(new_cases) as total_cases,sum(cast(new_deaths as int))  as total_deaths,sum(cast(new_deaths as int))/SUM(new_cases)*100 as sDeathPercentage
 from portfolioProject..covidDeaths
 where continent is not null
---group by date
 order by 1,2
 
 
